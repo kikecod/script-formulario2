@@ -1,0 +1,77 @@
+body{
+    background-color: #dddbdb;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.checkbox{
+    width: auto;
+    height: auto;
+}
+form{
+    position: relative;
+    width: 750px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content:space-around;
+}
+.send{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+.send_form_input{
+    width: 10px;
+    height: 10px;
+}
+input {
+    width: 280px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+    height: 100px;
+}
+p{
+    font-size:10px;
+    color: red;
+    display: none;
+}
+button{
+    border-radius: 10px;
+    border: 0px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    width: 200px;
+    height: 20px;
+}
+button:hover {
+    background-color: #333; /* Gris oscuro */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}

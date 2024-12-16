@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="container">
+        <form action="submit" id="formulario">
+            <section>
+                <label><strong>Usuario</strong></label>
+                <input class="user_form_input" type="text"name="usuario" id="usuario">
+                <p class="formulario_input_error_usuario" id="formulario_input_error_usuario">El usuaro tiene que ser de 4 a 16 digitos y solo puede contener numero, letras y guion bajo.</p>
+            </section>
+            <section>
+                <label><strong>Nombre</strong></label>
+                <input class="name_form_input" type="text" name="nombre" id="nombre">
+                <p class="formulario_input_error_nombre" id="formulario_input_error_nombre">El nombre solo tiene que ser letras, espacios y acentos</p>
+            </section>
+            <section>
+                <label><strong>Contraseña</strong></label>
+                <input class="password_form_input" type="password" name="contrasena" id="contrasena">
+                <p class="formulario_input_error_contrasena" id="formulario_input_error_contrasena">La contraseña tiene que se de 4 a 12 digitos</p>
+            </section>
+            <section>
+                <label><strong>Repetir Contraseña</strong></label>
+                <input class="repeat_form_input" type="text" name="repContrasena" id="repContrasena">
+                <p class="formulario_input_error_repContrasena" id="formulario_input_error_repContrasena">Ambas contraseñas tiene que ser iguales y  de 4 a 12 digitos</p>
+            </section>
+            <section>
+                <label><strong>Correo electronico</strong></label>
+                <input class="email_form_input" type="email" name="email" id="email">
+                <p class="formulario_input_error_email" id="formulario_input_error_email">El correo solo puede contener letras, numeros puntos, guiones y guion bajo</p>
+            </section>
+            <section>
+                <label><strong>Telefono</strong></label>
+                <input class="phone_form_input" type="text" name="phone" id="phone">
+                <p class="formulario_input_error_phone" id="formulario_input_error_phone">El telefono solo puede contener numeros y el maximo son 14 digitos</p>
+            </section>
+            <div class="send">
+                <div class="termsandconditions">
+                    <input class="send_form_input" class="checkbox" type="checkbox" name="checkbox" id="checkbox">
+                    <label for=""><strong>Acepto los Terminos y Condiciones</strong></label>
+                    <p class="formulario_input_error_checkbox" id="formulario_input_error_checkbox">Acepte todos los terminos y condiciones</p>
+                </div>
+                <button type="button" >Enviar</button>
+                
+                <p class="formulario_input_send" id="formulario_input_send" >Formulario enviado exitosamente</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
